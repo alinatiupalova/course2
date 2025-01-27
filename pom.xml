@@ -1,0 +1,45 @@
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+  
+    <parent>
+        <groupId>org.vividus</groupId>
+        <artifactId>vividus</artifactId>
+        <version>0.5.0</version>
+    </parent>
+  
+    <groupId>com.example.vividus</groupId>
+    <artifactId>vividus-jbehave-project</artifactId>
+    <version>1.0.0</version>
+    <name>vividus-jbehave-project</name>
+    <description>vividus-jbehave-project</description>
+
+    <dependencies>
+        <!-- Additional dependencies can be added here if needed -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Surefire Plugin for running tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>vividus-repo</id>
+            <url>'http://repo1.maven.org/maven2'</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>
+
